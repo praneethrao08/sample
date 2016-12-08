@@ -1,0 +1,13 @@
+<ion-view view-title="Traffic Regulatory">
+    <ion-content padding="true" id="photoContent">
+        <button class="button button-full button-positive" ng-click="takePhoto()">
+            Capture Photo
+        </button>
+        <br>
+        <img ng-show="imgURI !== undefined" ng-src={{imgURI}}>
+        <br>
+        <button ng-show="imgURI !== undefined" class="button button-full button-positive" ng-click="navigateTo('app.activate')">
+            Confirm Photo
+        </button>
+    </ion-content>
+</ion-view>
